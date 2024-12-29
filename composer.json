@@ -1,0 +1,32 @@
+{
+    "name": "codeigniter4/customer-rating",
+    "description": "Sistema de calificación de clientes con CodeIgniter 4",
+    "type": "project",
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "codeigniter4/framework": "^4.0",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Config\\": "app/Config",
+            "CodeIgniter\\": "vendor/codeigniter4/framework/system/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "post-install-cmd": []
+    },
+    "minimum-stability": "stable"
+}

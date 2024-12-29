@@ -1,0 +1,56 @@
+.rating-system {
+    margin: 2rem 0;
+}
+
+.stars {
+    display: inline-flex;
+    gap: 0.25rem;
+    color: #ffd700;
+    font-size: 24px;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input[type="radio"]:checked ~ label {
+    color: #ffb700;
+}
+
+.rating-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f8f9fa;
+}
+
+.rating-item .star {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.rating-item .star.filled {
+    color: #ffd700;
+}
+
+.rating-meta {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+.alert {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
